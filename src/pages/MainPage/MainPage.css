@@ -1,0 +1,15 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light grey background */
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    color: #333; /* Dark grey color for text */
+    margin-bottom: 20px;
+}
+
+/* You can add more styling as needed */
