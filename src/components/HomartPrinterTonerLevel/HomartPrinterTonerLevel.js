@@ -7,15 +7,15 @@ const HomartPrinterTonerLevel = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const result = await getPrinterTonerLevels();
-            setData(result);
+            const result = await axios('http://localhost:3015/printer/tonerlevel');
+            setData(result.data);
         };
 
         fetchData();
 
-        const intervalId = setInterval(fetchData, 600000); // Fetch data every 10 minutes
+        const intervalId = setInterval(fetchData, 600000); // fetch data every 10 minutes
 
-        return () => clearInterval(intervalId); // Cleanup on unmount
+        return () => clearInterval(intervalId); // cleanup on unmount
     }, []);
 
     return (
@@ -23,17 +23,17 @@ const HomartPrinterTonerLevel = () => {
             <table className="printer-table">
                 <thead>
                     <tr>
-                        <th></th>
+                        <th></th> 
                         {data.map((printer, i) => (
-                            <th key={i}>{printer.name}</th>
+                            <th key={i}>{printer.name}</th> 
                         ))}
                     </tr>
                 </thead>
                 <tbody>
                     {data.length > 0 && Object.keys(data[0]).map((property, i) => (
-                        property !== 'name' && (
+                        property !== 'name' && (  // Exclude the 'name' property
                             <tr key={i}>
-                                <th>{property}</th>
+                                <th>{property}</th>  {/* Property names as headers */}
                                 {data.map((printer, j) => (
                                     <td key={j}>{printer[property]}</td>
                                 ))}

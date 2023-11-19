@@ -1,38 +1,37 @@
 .App {
-    text-align: center;
-  }
-  
-  h1 {
-    color: #4a4a4a;
-    padding: 20px 0;
-  }
-  
-  .table-container {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 20px;
-  }
-  
-  .printer-table {
-    border-spacing: 0;
-    border: 1px solid #ddd;
-    width: 100%;
-    margin-bottom: 40px;
-  }
-  
-  th {
-    margin: 0;
-    padding: 0.5rem;
-    border-bottom: 1px solid #ddd;
-    background: #f3f3f3;
-    white-space: nowrap;
-  }
-  
-  td {
-    margin: 0;
-    padding: 0.5rem;
-    border-bottom: 1px solid #ddd;
-    white-space: nowrap;
-  }
-  
+  text-align: center;
+}
+
+h1 {
+  color: #4a4a4a;
+  padding: 20px 0;
+}
+
+.table-container {
+  margin: 0 auto;
+  width: 100%;  /* Adjust the width of the container */
+  max-width: 1200px;  /* Set a maximum width for the container */
+  padding: 0 20px;  /* Add some horizontal padding */
+}
+
+.printer-table {
+  border-spacing: 0;
+  border: 1px solid #ddd;
+  width: 100%;  /* Make the table full width */
+  margin-bottom: 40px;
+}
+
+th {
+  margin: 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  background: #f3f3f3;
+  white-space: nowrap;  /* Prevent the headers from wrapping */
+}
+
+td {
+  margin: 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;  /* Prevent the cells from wrapping */
+}
