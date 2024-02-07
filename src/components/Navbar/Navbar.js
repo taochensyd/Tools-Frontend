@@ -7,7 +7,13 @@ const Navbar = () => {
         <nav className="navbar">
             <ul>
                 <li>
-                    <Link to="/">Home</Link> {/* Link to the main page */}
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/HomartPrinterTonerLevel">Printer Tower Level</Link>
+                </li>
+                <li>
+                    <Link to="/HomartIGuard">iGuard Time</Link>
                 </li>
                 {/* Add more navigation links as needed */}
             </ul>

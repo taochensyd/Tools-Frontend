@@ -1,13 +1,18 @@
 import React from 'react';
-import HomartPrinterTonerLevel from '../../components/HomartPrinterTonerLevel/HomartPrinterTonerLevel'; // Ensure the path is correct
+import HomartPrinterTonerLevel from '../../components/HomartPrinterTonerLevel/HomartPrinterTonerLevel';
+import HomartIGuard from '../../components/HomartIGuard/HomartIGuard';
 import './MainPage.css'; // Import the CSS for MainPage
 
 const MainPage = () => {
     return (
         <div className="main-page">
-            <h1>Welcome to Homart Printer Management</h1>
-            <p>This is the home page of your application. Below is the printer toner level:</p>
+            {/* <h1>Homart Printer Management</h1>
+            <p>Printer toner level:</p>
             <HomartPrinterTonerLevel />
+
+            <h1>Homart IGuard</h1>
+            <p>IGuard Time:</p>
+            <HomartIGuard /> */}
         </div>
     );
 };
